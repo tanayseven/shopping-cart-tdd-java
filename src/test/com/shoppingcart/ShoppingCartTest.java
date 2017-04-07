@@ -99,4 +99,15 @@ public class ShoppingCartTest {
         // Then
         assertEquals(400, shoppingCart.totalCost());
     }
+
+    @Ignore
+    @Test
+    public void theTotalCostOfSOfAddingTwoCopiesOfTDDByExample() {
+        // When
+        addToCartTDDByExample();
+        addToCartTDDByExample();
+
+        // Then
+        assertEquals(1200, shoppingCart.totalCost());
+    }
 }
